@@ -20,6 +20,7 @@ module Fog
         attribute :status
         attribute :storage
         attribute :template
+        attribute :lb_applications, :type => :array # The Load Balanced Application IDs for this block.
 
         attr_accessor :password
         attr_writer :private_key, :private_key_path, :public_key, :public_key_path, :username

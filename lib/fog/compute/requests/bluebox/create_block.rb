@@ -23,7 +23,7 @@ module Fog
             :expects  => 200,
             :method   => 'POST',
             :path     => '/api/blocks.json',
-            :query    => {'product' => product_id, 'template' => template_id}.merge!(options)
+            :query    => query = {'product' => product_id, 'template' => template_id}.merge!(options)
           )
         end
 
