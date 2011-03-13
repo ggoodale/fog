@@ -22,10 +22,12 @@ Shindo.tests('dns tests', 'dns') do
       # create a zone
       #   domain should be the hostname
       #   email is only required for linode, but included for consistency
+      #   ttl is only required for bbg, but included for consistency
       tests('@zone = @dns.zones.create').succeeds do
         @zone = @dns.zones.create(
           :domain => 'fogdnsexamples.com',
-          :email => 'tests@fogdnsexamples.com'
+          :email => 'tests@fogdnsexamples.com',
+          :ttl => 60
         )
       end
 
