@@ -10,3 +10,4 @@ rdoc
 pkg
 spec/credentials.yml
 *~
+.rvmrc
